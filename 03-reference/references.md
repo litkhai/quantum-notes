@@ -53,6 +53,14 @@
 - Rigetti, [Cepheus-1-108Q 일반 제공 발표](https://investors.rigetti.com/news-releases/news-release-details/rigetti-announces-general-availability-108-qubit-system), 2026
 - IBM, [Quantum roadmap 2026](https://www.ibm.com/roadmaps/quantum/2026/)
 
+## 산업·시장·생태계
+
+- QED-C, [2026 Market Forecast: Quantum Computing](https://quantumconsortium.org/publication/2026-market-forecast-quantum-computing/), 2026
+- QED-C, [State of the Global Quantum Industry 2026 발표](https://quantumconsortium.org/global-quantum-computing-market-to-double/), 2026
+- EPO/OECD, [Mapping the global quantum ecosystem](https://www.oecd.org/en/publications/mapping-the-global-quantum-ecosystem_010c37da-en.html), 2025
+
+시장 보고서는 동료평가된 물리 결과와 다른 증거 층이다. 시장 정의, 기준연도, 조사 표본, 현재 추정과 미래 전망을 확인한 뒤 사용한다.
+
 ## 출처를 읽는 기준
 
 | 출처 | 확인할 것 |

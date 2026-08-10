@@ -1,49 +1,130 @@
-# 양자컴퓨팅 노트
+# Quantum Notes
 
-이 저장소는 독자에 따라 **두 과정으로 완전히 나뉜다.**
+양자컴퓨팅의 이론적 원리부터 하드웨어, 산업 생태계와 시장 전망까지 한글로 정리하는 문서 저장소다.
 
-## 1. 아무것도 모르는 사람을 위한 2시간 강의
+- GitHub: [litkhai/quantum-notes](https://github.com/litkhai/quantum-notes)
+- 기본 브랜치: `main`
+- 문서 기준일: 2026-08-11
+- 대상: 일반인·비전공자·기술 및 산업 관계자
+- 성격: Markdown 기반 강의·학습 노트
 
-양자역학·선형대수·프로그래밍을 모른다고 가정한다. 수식보다 시연과 질문을 중심으로 다음만 이해하는 과정이다.
+> 양자컴퓨터는 모든 계산을 빠르게 하는 기계가 아니라, 특정 문제의 구조를 확률진폭·위상·간섭·얽힘으로 처리하는 특수 가속기다.
 
-- 큐비트가 단순한 무작위 비트와 다른 이유
-- 중첩보다 위상과 간섭이 중요한 이유
-- 양자컴퓨터가 모든 문제를 빠르게 풀지 못하는 이유
-- 실제 하드웨어와 오류 정정이 어려운 이유
-- 산업 전망과 보안 위협을 과장 없이 읽는 법
+## 두 개의 학습 경로
 
-**수강생이라면 여기서 시작:** [2시간 입문 강의](01-beginner-lecture/README.md)
+### 1. 비전공자를 위한 2시간 세션 강의
 
-## 2. 상세한 원리를 이해하려는 사람을 위한 심화 과정
+실습이나 SDK 교육이 아니라 **이론 설명과 산업·시장 이해를 위한 120분 세션**이다.
 
-입문 강의의 설명을 수식·알고리즘·물리 구현·산업 자료까지 확장한다. 순서대로 읽거나 관심 있는 장만 선택할 수 있다.
+- 전반부: 큐비트, 중첩, 위상, 간섭, 얽힘과 알고리즘의 한계
+- 후반부: 하드웨어 방식, 오류 정정, 산업 가치사슬, 수익 모델과 시장 성숙도
+- 선수지식: 없음
+- 수식: 개념을 설명하는 최소 수준
 
-1. 양자이론의 역사적 출발
-2. 큐비트·게이트·측정
-3. 위상·간섭과 Grover 탐색
-4. 텐서곱과 얽힘
-5. 물리적 구현과 오류 정정
-6. 클라우드·기업·양자 우위
-7. Shor·PQC·양자 난수
+**여기서 시작:** [01-beginner-lecture](01-beginner-lecture/README.md)
 
-**더 깊이 공부하려면 여기서 시작:** [상세 심화 과정](02-deep-dive/README.md)
+주요 문서:
 
-## 공통 자료
+- [수강생 핸드아웃](01-beginner-lecture/session-handout.md)
+- [강사용 가이드](01-beginner-lecture/instructor-guide.md)
+- [120분 진행표](01-beginner-lecture/runsheet.md)
+- [슬라이드 구성안](01-beginner-lecture/slide-outline.md)
+- [산업·시장 브리프](01-beginner-lecture/industry-market-brief.md)
 
-- [FAQ](03-reference/faq.md): 강의 중 나올 수 있는 깊은 질문
-- [용어 사전](03-reference/glossary.md): 낯선 용어의 짧은 정의
-- [참고자료](03-reference/references.md): 논문·공식 문서·최신 산업 출처
-- [원문 보관소](archive/README.md): 구조 개편 전 자료
+### 2. 상세한 원리를 위한 심화 과정
 
-## 구조
+입문 강의의 설명을 수식, 알고리즘의 조건과 예외, 물리 구현과 산업 근거까지 확장한다.
+
+1. [양자이론의 출발](02-deep-dive/01-quantum-origins.md)
+2. [큐비트·게이트·측정](02-deep-dive/02-qubits-gates-measurement.md)
+3. [위상·간섭과 Grover 탐색](02-deep-dive/03-interference-and-grover.md)
+4. [텐서곱과 얽힘](02-deep-dive/04-entanglement.md)
+5. [물리적 구현과 오류 정정](02-deep-dive/05-hardware-and-error-correction.md)
+6. [클라우드·산업·양자 우위](02-deep-dive/06-cloud-industry-and-advantage.md)
+7. [Shor·PQC·양자 난수](02-deep-dive/07-security-and-randomness.md)
+
+**심화 과정 안내:** [02-deep-dive](02-deep-dive/README.md)
+
+## 저장소 구조
 
 ```text
 quantum-notes/
 ├── README.md
-├── 01-beginner-lecture/   # 선수지식 없는 사람을 위한 2시간 강의
-├── 02-deep-dive/          # 원리와 산업을 자세히 파고드는 심화 노트
-├── 03-reference/          # FAQ, 용어, 참고자료
-└── archive/               # 기존 원문과 초안 보존
+├── CONTRIBUTING.md
+├── 01-beginner-lecture/
+│   ├── README.md
+│   ├── session-handout.md
+│   ├── instructor-guide.md
+│   ├── runsheet.md
+│   ├── slide-outline.md
+│   └── industry-market-brief.md
+├── 02-deep-dive/
+│   ├── README.md
+│   └── 01-...md ~ 07-...md
+├── 03-reference/
+│   ├── faq.md
+│   ├── glossary.md
+│   └── references.md
+└── archive/
+    ├── README.md
+    ├── initial-draft.md
+    ├── drafts/
+    └── originals/
 ```
 
-> 양자컴퓨터는 모든 계산을 빠르게 하는 기계가 아니라, 특정 문제의 구조를 확률진폭·위상·간섭·얽힘으로 처리하는 특수 가속기다.
+## 공통 참고자료
+
+- [FAQ](03-reference/faq.md): 강의에서 나올 수 있는 심화 질문
+- [용어 사전](03-reference/glossary.md): 주요 개념의 짧은 정의
+- [참고자료](03-reference/references.md): 논문·공식 문서·산업 출처
+- [원문 보관소](archive/README.md): 구조 개편 전 자료와 초안
+
+## 저장소 사용 방법
+
+GitHub에서 Markdown 문서를 직접 읽어도 된다. 로컬에서 편집하려면 다음과 같이 복제한다.
+
+```bash
+git clone https://github.com/litkhai/quantum-notes.git
+cd quantum-notes
+```
+
+별도의 빌드나 패키지 설치는 필요하지 않다. Markdown과 수식 렌더링을 지원하는 편집기 또는 GitHub 웹 화면을 사용한다.
+
+강의를 준비할 때는 다음 순서를 권장한다.
+
+```text
+01-beginner-lecture/README.md
+  → instructor-guide.md
+  → runsheet.md
+  → slide-outline.md
+  → industry-market-brief.md의 최신 수치 확인
+```
+
+## 문서 작성 원칙
+
+- 본문은 한글로 작성하고 중요한 영문 용어를 첫 등장에 병기한다.
+- 초보 과정은 직관과 판단 기준을 중심으로 하고, 증명과 예외는 심화 과정에 둔다.
+- 이론적 가속, 실험적 양자 우위, 제품 유용성과 경제적 가치를 구분한다.
+- 기업 발표와 로드맵은 동료평가 논문과 다른 증거 수준으로 표시한다.
+- 시장 수치에는 조사기관, 기준연도, 시장 범위와 전망 여부를 함께 쓴다.
+- 시점에 민감한 내용에는 기준일과 1차 출처를 붙인다.
+- 기존 원문은 삭제하지 않고 `archive/`에 보존한다.
+
+## 업데이트 정책
+
+다음 정보는 강의 일주일 전에 다시 확인한다.
+
+- 공개적으로 접근 가능한 QPU와 클라우드 가격
+- 주요 하드웨어 기업의 실제 제공 시스템과 로드맵
+- 오류 정정·양자 우위 관련 최신 동료평가 결과
+- QED-C 등에서 발표하는 산업 매출·시장 전망
+- NIST의 PQC 표준과 전환 지침
+
+문서 수정과 기여 방법은 [CONTRIBUTING.md](CONTRIBUTING.md)를 따른다.
+
+## 범위와 주의사항
+
+- 이 저장소는 교육·학습 자료이며 투자 권유가 아니다.
+- 기업 사례는 산업 구조를 이해하기 위한 예시다.
+- 시장 전망은 불확실하며 출처의 가정과 정의에 따라 달라진다.
+- 양자컴퓨팅, 양자통신·보안과 양자센싱 시장을 필요 없이 합산하지 않는다.
