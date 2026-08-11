@@ -26,9 +26,9 @@ hide:
 
     ---
 
-    비전공자의 눈높이에서 이론의 핵심과 산업·시장 구조를 이해합니다. 수강생 핸드아웃과 강사용 상세 대본을 제공합니다.
+    비전공자를 위한 장문 강의 본문에서 이론, 하드웨어, 산업·시장과 보안을 하나의 순서로 읽습니다.
 
-    [입문 강의 안내 →](01-beginner-lecture/README.md)
+    [입문 강의 본문 →](01-beginner-lecture/lecture-notes.md)
 
 -   **상세 심화 과정**
 
@@ -60,7 +60,7 @@ hide:
 
 | 구간 | 핵심 내용 | 자료 |
 |---|---|---|
-| 0:00–0:25 | 양자이론의 출발, 큐비트·중첩·위상·측정 | [수강생 핸드아웃](01-beginner-lecture/session-handout.md) |
+| 0:00–0:25 | 양자이론의 출발, 큐비트·중첩·위상·측정 | [입문 강의 본문](01-beginner-lecture/lecture-notes.md) |
 | 0:25–0:55 | 간섭·얽힘, Grover·Shor·시뮬레이션과 한계 | [120분 상세 진행표](01-beginner-lecture/runsheet.md) |
 | 0:55–1:05 | 휴식 | — |
 | 1:05–1:23 | 하드웨어 방식, 주요 기업, 오류 정정과 로드맵 | [주요 플레이어 전략](02-deep-dive/08-major-players.md) |
@@ -77,6 +77,7 @@ hide:
 
 ## 빠른 링크
 
+- [입문 강의 본문](01-beginner-lecture/lecture-notes.md)
 - [FAQ](03-reference/faq.md)
 - [용어 사전](03-reference/glossary.md)
 - [논문과 공식 자료](03-reference/references.md)

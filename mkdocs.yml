@@ -58,6 +58,7 @@ nav:
   - 홈: index.md
   - 2시간 입문 강의:
       - 과정 안내: 01-beginner-lecture/README.md
+      - 입문 강의 본문: 01-beginner-lecture/lecture-notes.md
       - 수강생 핸드아웃: 01-beginner-lecture/session-handout.md
       - 120분 상세 진행표: 01-beginner-lecture/runsheet.md
       - 강사용 가이드: 01-beginner-lecture/instructor-guide.md

@@ -1,8 +1,8 @@
 # 수강생 핸드아웃: 양자컴퓨팅의 원리와 산업
 
-[세션 홈](README.md) · [산업·시장 브리프](industry-market-brief.md) · [상세 심화 과정](../02-deep-dive/README.md)
+[세션 홈](README.md) · [입문 강의 본문](lecture-notes.md) · [산업·시장 브리프](industry-market-brief.md) · [상세 심화 과정](../02-deep-dive/README.md)
 
-이 문서는 2시간 세션을 복습하기 위한 요약이다.
+이 문서는 2시간 세션을 복습하기 위한 요약이다. 개념과 산업 구조를 서술형으로 읽을 때에는 [입문 강의 본문](lecture-notes.md)을 사용한다.
 
 ## 한 문장 정의
 

@@ -1,6 +1,6 @@
 # 이론·산업 중심 120분 강의 상세 진행표
 
-[세션 홈](README.md) · [강사용 가이드](instructor-guide.md) · [슬라이드 구성안](slide-outline.md) · [산업·시장 브리프](industry-market-brief.md)
+[세션 홈](README.md) · [입문 강의 본문](lecture-notes.md) · [강사용 가이드](instructor-guide.md) · [슬라이드 구성안](slide-outline.md) · [산업·시장 브리프](industry-market-brief.md)
 
 > 이 문서는 강사가 처음부터 끝까지 그대로 리허설할 수 있는 마스터 진행표다. 실제 강의에서는 문장을 외우기보다 각 블록의 **도착점·전환 문장·표현 기준**을 기억한다.
 

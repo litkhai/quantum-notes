@@ -25,6 +25,7 @@
 
 주요 문서:
 
+- [입문 강의 본문](docs/01-beginner-lecture/lecture-notes.md)
 - [수강생 핸드아웃](docs/01-beginner-lecture/session-handout.md)
 - [강사용 가이드](docs/01-beginner-lecture/instructor-guide.md)
 - [120분 진행표](docs/01-beginner-lecture/runsheet.md)

@@ -6,7 +6,8 @@
 
 ## 입문과 교과서
 
-- IBM Quantum Learning, [Quantum computing fundamentals](https://learning.quantum.ibm.com/course/quantum-business-foundations/quantum-computing-fundamentals)
+- IBM Quantum Learning, [Quantum computing fundamentals](https://quantum.cloud.ibm.com/learning/en/courses/quantum-business-foundations/quantum-computing-fundamentals)
+- IBM Quantum Learning, [Basics of quantum information](https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information)
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information*, Cambridge University Press
 - John Preskill, [Quantum Computation lecture notes](https://www.preskill.caltech.edu/ph219/)
 - Craig Gidney, [Quirk quantum circuit simulator](https://algassert.com/quirk)

@@ -1,6 +1,6 @@
 # 비전공자를 위한 2시간 양자컴퓨팅 세션
 
-[전체 홈](../index.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
+[전체 홈](../index.md) · [입문 강의 본문](lecture-notes.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
 
 ## 세션의 성격
 
@@ -23,12 +23,13 @@
 
 ### 수강생
 
-[세션 핸드아웃](session-handout.md)만 읽으면 된다. 강의의 이론과 시장 설명을 쉬운 문장으로 정리했다.
+[입문 강의 본문](lecture-notes.md)은 강의의 이론과 산업 흐름을 서술형으로 연결한다. 강의 후 핵심 내용을 다시 확인할 때에는 [세션 핸드아웃](session-handout.md)을 사용한다.
 
 ### 강사
 
 | 문서 | 용도 |
 |---|---|
+| [입문 강의 본문](lecture-notes.md) | 수강생이 연속해서 읽을 수 있는 원리·하드웨어·산업·보안 설명 |
 | [강사용 가이드](instructor-guide.md) | 목표, 설명 수준, 강의 원칙과 준비물 |
 | [120분 상세 진행표](runsheet.md) | 분 단위 강의 흐름, 그대로 읽을 수 있는 대사, 화면 지시, 표현 기준, 예상 Q&A, 90분 압축안과 리허설 체크리스트 |
 | [슬라이드 구성안](slide-outline.md) | 26장 슬라이드의 제목·시각 자료·메시지 |
@@ -56,4 +57,4 @@
 
 > 과학적 진전, 제품화, 고객 가치와 경제적 수익성은 서로 다른 단계다.
 
-[전체 홈](../index.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
+[전체 홈](../index.md) · [입문 강의 본문](lecture-notes.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
