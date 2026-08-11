@@ -11,6 +11,9 @@
 | 2시간 세션에서 직접 설명할 핵심 | `docs/01-beginner-lecture/` |
 | 수식·증명·조건·예외와 기술 세부사항 | `docs/02-deep-dive/` |
 | FAQ·용어·외부 출처 | `docs/03-reference/` |
+| Qiskit Aer 회로·실행 코드 | `simulations/` |
+| 시뮬레이션 테스트 | `tests/` |
+| 자동 생성 결과와 해설 | `docs/04-simulations/` |
 | 폐기하지 않을 초기 원문·과거 초안 | `docs/archive/` |
 
 초보 문서가 길어지면 세부 설명을 심화 문서로 옮기고 링크한다. 같은 상세 설명을 두 위치에 중복 작성하지 않는다.
@@ -81,6 +84,7 @@ git push -u origin docs/topic-name
 작은 수정은 한 목적의 커밋으로 묶는다. 권장 커밋 접두사는 다음과 같다.
 
 - `docs:` 문서 추가·수정
+- `feat:` 시뮬레이션 기능·회로 추가
 - `fix:` 잘못된 사실·수식·링크 수정
 - `refactor:` 문서 구조와 탐색 경로 변경
 - `chore:` 저장소 관리 작업
@@ -93,6 +97,8 @@ git push -u origin docs/topic-name
 - [ ] 기업 목표와 이미 실현된 결과가 구분되어 있는가?
 - [ ] 시장 숫자의 정의·기준일·출처가 있는가?
 - [ ] 관련 참고자료를 `docs/03-reference/references.md`에 추가했는가?
+- [ ] 시뮬레이션 변경 시 `python -m unittest discover -s tests -v`가 통과하는가?
+- [ ] `python -m simulations.run` 실행 후 생성 결과가 최신 상태인가?
 - [ ] 오래된 원문을 보존해야 하는 변경인가?
 - [ ] `git status`에 의도하지 않은 파일이 없는가?
 

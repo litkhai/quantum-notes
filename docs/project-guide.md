@@ -36,14 +36,19 @@ quantum-notes/
 ├── CONTRIBUTING.md           # 작성·검토·Git 작업 규칙
 ├── mkdocs.yml                # 사이트 내비게이션과 테마 설정
 ├── requirements-docs.txt     # 문서 빌드 도구 버전
+├── requirements-simulations.txt # Qiskit Aer 고정 버전
+├── simulations/              # 회로·실행·보고서 생성 코드
+├── tests/                    # 시뮬레이션 회귀 테스트
 ├── .github/workflows/
-│   └── pages.yml             # GitHub Pages 자동 배포
+│   ├── pages.yml             # GitHub Pages 자동 배포
+│   └── simulations.yml       # Qiskit Aer 자동 검증
 ├── docs-overrides/           # 사이트 템플릿 확장
 └── docs/
     ├── index.md              # GitHub Pages 첫 화면
     ├── 01-beginner-lecture/  # 120분 입문 강의
     ├── 02-deep-dive/         # 원리·산업 심화 노트
     ├── 03-reference/         # FAQ·용어·출처
+    ├── 04-simulations/       # 실행 안내와 생성 결과
     ├── docs-assets/          # CSS·JavaScript·아이콘
     └── archive/              # 구조 개편 전 원문과 초안
 ```
@@ -62,6 +67,7 @@ quantum-notes/
 | `docs/01-beginner-lecture/` | 비전공자 대상 120분 세션 | 장문 강의 본문, 핸드아웃, 상세 진행표, 강사 가이드 |
 | `docs/02-deep-dive/` | 수식·조건·예외·산업 근거 | 큐비트, 오류 정정, 보안, 주요 플레이어 |
 | `docs/03-reference/` | 반복 참조 자료 | FAQ, 용어 사전, 공식 출처 |
+| `docs/04-simulations/` | 재현 가능한 계산 자료 | 실행 안내, Markdown·JSON 결과 |
 | `docs/archive/` | 역사적 원문 보존 | 최초 초안과 구조 개편 전 문서 |
 
 ## 문서 수정 흐름
@@ -86,6 +92,8 @@ git switch -c docs/topic-name
 - 강의에서 직접 말할 내용: `docs/01-beginner-lecture/`
 - 기술 조건과 상세 근거: `docs/02-deep-dive/`
 - 용어·FAQ·출처: `docs/03-reference/`
+- 시뮬레이션 코드: `simulations/`, `tests/`
+- 생성 결과와 해설: `docs/04-simulations/`
 - 사이트 메뉴와 표시 순서: `mkdocs.yml`
 - 색상·간격·반응형 표시: `docs/docs-assets/stylesheets/extra.css`
 
@@ -104,10 +112,21 @@ mkdocs serve
 mkdocs build --strict
 ```
 
-### 5. 커밋과 Pull Request
+### 5. 시뮬레이션 확인
 
 ```bash
-git add docs mkdocs.yml README.md CONTRIBUTING.md
+python -m pip install -r requirements-simulations.txt
+python -m unittest discover -s tests -v
+python -m simulations.run
+```
+
+마지막 명령은 `docs/04-simulations/results.md`와 `results.json`을 갱신한다. 기본 shots와 seed는 게시 결과의 재현성을 위해 유지한다.
+
+### 6. 커밋과 Pull Request
+
+```bash
+git add docs simulations tests .github/workflows \
+  mkdocs.yml README.md CONTRIBUTING.md requirements-simulations.txt
 git commit -m "docs: describe the change"
 git push -u origin docs/topic-name
 ```
@@ -125,6 +144,8 @@ Pull Request에는 변경 목적, 주요 근거, 기준일과 검증 명령을 �
 5. GitHub Pages 환경에 배포
 
 배포 상태는 [Actions 페이지](https://github.com/litkhai/quantum-notes/actions)에서 확인한다. 성공한 실행에는 배포된 사이트 주소가 표시된다.
+
+`simulations.yml` 워크플로는 Qiskit Aer 코드를 별도로 검증한다. 단위 테스트를 실행하고 결과 문서를 다시 생성한 뒤, 커밋된 결과와 차이가 있는지 확인한다.
 
 ## 변경 이력과 버전 관리
 

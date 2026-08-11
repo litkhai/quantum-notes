@@ -56,6 +56,13 @@ hide:
 
 </div>
 
+## 코드로 재현하기
+
+Qiskit Aer 시뮬레이션은 `H-H`, `H-Z-H`, Bell 상태, 2큐비트 Grover와 교육용 잡음 모델을 자동 실행합니다. 결과 문서와 JSON은 동일한 shots·seed로 생성되며 GitHub Actions가 회로 테스트와 결과 일치를 검사합니다.
+
+[시뮬레이션 안내](04-simulations/README.md){ .md-button .md-button--primary }
+[자동 실행 결과](04-simulations/results.md){ .md-button }
+
 ## 120분 강의 구성
 
 | 구간 | 핵심 내용 | 자료 |

@@ -1,0 +1,68 @@
+{
+  "configuration": {
+    "seed": 42,
+    "shots": 4096
+  },
+  "experiments": {
+    "bell_ideal": {
+      "correlation_probability": 1.0,
+      "counts": {
+        "00": 2022,
+        "11": 2074
+      },
+      "interpretation": "각 비트는 무작위이며 두 비트를 함께 보면 00과 11의 상관관계가 나타난다.",
+      "label": "Bell 상태",
+      "probabilities": {
+        "00": 0.493652,
+        "11": 0.506348
+      }
+    },
+    "bell_noisy": {
+      "correlation_probability": 0.928467,
+      "counts": {
+        "00": 1862,
+        "01": 147,
+        "10": 146,
+        "11": 1941
+      },
+      "interpretation": "게이트·측정 잡음이 01과 10 결과를 만들며 이상적 상관관계를 낮춘다.",
+      "label": "Bell 상태와 잡음",
+      "probabilities": {
+        "00": 0.45459,
+        "01": 0.035889,
+        "10": 0.035645,
+        "11": 0.473877
+      }
+    },
+    "grover_11": {
+      "counts": {
+        "11": 4096
+      },
+      "interpretation": "한 번의 오라클과 확산 연산이 표시된 상태 11의 진폭을 보강한다.",
+      "label": "2큐비트 Grover",
+      "probabilities": {
+        "11": 1.0
+      }
+    },
+    "h_h": {
+      "counts": {
+        "0": 4096
+      },
+      "interpretation": "두 H 게이트의 경로가 0 상태에서 보강돼 입력 상태로 돌아간다.",
+      "label": "H-H 간섭",
+      "probabilities": {
+        "0": 1.0
+      }
+    },
+    "h_z_h": {
+      "counts": {
+        "1": 4096
+      },
+      "interpretation": "Z가 바꾼 상대위상을 마지막 H가 측정 가능한 1 상태로 변환한다.",
+      "label": "H-Z-H 위상 간섭",
+      "probabilities": {
+        "1": 1.0
+      }
+    }
+  }
+}

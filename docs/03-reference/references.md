@@ -43,6 +43,8 @@
 - Amazon Web Services, [Amazon Braket pricing](https://aws.amazon.com/braket/pricing/)
 - Microsoft, [Azure Quantum target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
 - IBM, [Qiskit documentation](https://quantum.cloud.ibm.com/docs)
+- IBM, [Qiskit Aer exact and noisy simulation](https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer)
+- Qiskit Aer, [AerSimulator API](https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.AerSimulator.html)
 
 ## 기업·하드웨어 1차 자료
 

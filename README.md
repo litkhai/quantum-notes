@@ -47,6 +47,14 @@
 
 **심화 과정 안내:** [02-deep-dive](docs/02-deep-dive/README.md)
 
+### 3. 코드로 재현하는 시뮬레이션
+
+Qiskit Aer로 간섭, Bell 상태, 2큐비트 Grover와 잡음의 영향을 재현한다. 고정된 shots와 seed로 결과를 생성하며 단위 테스트와 GitHub Actions가 코드와 게시 결과의 일치를 검사한다.
+
+- [Qiskit Aer 시뮬레이션 안내](docs/04-simulations/README.md)
+- [자동 실행 결과](docs/04-simulations/results.md)
+- 실행 명령: `python -m simulations.run`
+
 ## 저장소 구조
 
 ```text
@@ -55,11 +63,15 @@ quantum-notes/
 ├── CONTRIBUTING.md
 ├── mkdocs.yml
 ├── requirements-docs.txt
+├── requirements-simulations.txt
+├── simulations/
+├── tests/
 └── docs/
     ├── index.md
     ├── 01-beginner-lecture/
     ├── 02-deep-dive/
     ├── 03-reference/
+    ├── 04-simulations/
     ├── docs-assets/
     └── archive/
 ```

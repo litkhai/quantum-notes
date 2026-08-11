@@ -74,6 +74,9 @@ nav:
       - 6. 클라우드·산업·양자 우위: 02-deep-dive/06-cloud-industry-and-advantage.md
       - 7. Shor·PQC·양자 난수: 02-deep-dive/07-security-and-randomness.md
       - 8. 주요 플레이어 전략: 02-deep-dive/08-major-players.md
+  - 시뮬레이션:
+      - Qiskit Aer 안내: 04-simulations/README.md
+      - 자동 실행 결과: 04-simulations/results.md
   - 참고자료:
       - FAQ: 03-reference/faq.md
       - 용어 사전: 03-reference/glossary.md

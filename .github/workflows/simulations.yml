@@ -1,0 +1,49 @@
+name: Validate Qiskit Aer simulations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "simulations/**"
+      - "tests/**"
+      - "requirements-simulations.txt"
+      - "docs/04-simulations/**"
+      - ".github/workflows/simulations.yml"
+  pull_request:
+    paths:
+      - "simulations/**"
+      - "tests/**"
+      - "requirements-simulations.txt"
+      - "docs/04-simulations/**"
+      - ".github/workflows/simulations.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-simulations.txt
+
+      - name: Install simulation dependencies
+        run: python -m pip install -r requirements-simulations.txt
+
+      - name: Run simulation tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Regenerate reports
+        run: python -m simulations.run
+
+      - name: Verify committed reports
+        run: git diff --exit-code -- docs/04-simulations/results.md docs/04-simulations/results.json
