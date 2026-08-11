@@ -2,7 +2,7 @@
 
 [이전: 하드웨어와 오류 정정](05-hardware-and-error-correction.md) · [심화 과정 홈](README.md) · [다음: 보안과 난수](07-security-and-randomness.md)
 
-> 기준일: 2026-08-11. 기업 수치와 가격은 강의 직전에 링크된 1차 출처에서 다시 확인한다. 이 문서는 투자 권유가 아니다.
+> 기준일: 2026-08-11. 기업 수치와 가격은 강의 직전에 링크된 1차 출처에서 다시 확인한다. 투자 판단에는 별도의 조사와 검증이 필요하다.
 
 ## 양자 클라우드란 무엇인가
 
@@ -23,7 +23,7 @@
 
 ## 가격을 읽는 법
 
-양자컴퓨터에 단일한 “판매 가격”은 없다.
+양자컴퓨터의 가격은 제공 방식에 따라 달라진다.
 
 - 공유형 QPU: 작업(task)과 반복 실행(shot) 단위 과금
 - 전용 예약: 시간 단위 장비 예약
@@ -49,7 +49,7 @@ IonQ는 이터븀 이온을 가두고 레이저 등으로 상태 준비·게이�
 
 Rigetti는 초전도 프로세서를 설계·제조하고 제어 스택과 클라우드 서비스를 함께 개발한다. 2026년 4월 회사는 12개의 9큐비트 chiplet으로 구성한 108큐비트 Cepheus-1-108Q의 일반 제공을 발표했다. 발표 당시 중앙값 2큐비트 게이트 충실도는 99.1%로 제시됐다. 이는 회사 발표 기준이며 이후 성능은 다시 확인해야 한다. [Rigetti 발표](https://investors.rigetti.com/news-releases/news-release-details/rigetti-announces-general-availability-108-qubit-system)
 
-기업을 비교할 때 큐비트 수나 단일 최고 충실도 하나가 아니라 다음을 본다.
+기업 비교에는 다음 시스템 지표를 함께 사용한다.
 
 - 전체 시스템 규모에서의 분포와 중앙값
 - 실제 사용 가능한 장비인지 로드맵인지
@@ -59,7 +59,7 @@ Rigetti는 초전도 프로세서를 설계·제조하고 제어 스택과 클�
 
 ## 서로 다른 QPU의 애플리케이션 호환성
 
-고수준 회로는 어느 정도 이식할 수 있지만 완전한 하드웨어 독립성은 아직 없다.
+고수준 회로는 어느 정도 이식할 수 있으며, 실제 성능은 하드웨어별 재합성과 튜닝에 좌우된다.
 
 | 층 | 비교적 이식 가능한 것 | 달라지는 것 |
 |---|---|---|
@@ -71,7 +71,7 @@ Rigetti는 초전도 프로세서를 설계·제조하고 제어 스택과 클�
 
 Azure QDK의 target profile처럼 장비가 지원하는 중간 측정과 고전 피드포워드 범위를 명시하는 방식도 있다. [Azure Quantum target profiles](https://learn.microsoft.com/en-us/azure/quantum/quantum-computing-target-profiles)
 
-실무적으로는 “한 번 작성해 어디서나 같은 성능”이 아니라 **한 번 표현한 알고리즘을 장비마다 다시 합성·튜닝**하는 단계에 가깝다.
+실무에서는 **한 번 표현한 알고리즘을 장비마다 다시 합성·튜닝**한다.
 
 ## 실제로 입증된 양자 우위
 
@@ -79,7 +79,7 @@ Azure QDK의 target profile처럼 장비가 지원하는 중간 측정과 고전
 
 ### 2019: 무작위 회로 샘플링
 
-Google의 Sycamore는 무작위 양자 회로 출력 분포를 샘플링하는 과제에서 당시 고전 추정보다 큰 속도 차이를 보고했다. 이후 고전 알고리즘과 하드웨어가 개선되며 격차 추정은 변했지만, 제한된 샘플링 과제에서 중요한 이정표였다. 과제 자체의 직접적 상업 용도는 알려져 있지 않다. [Nature 논문](https://www.nature.com/articles/s41586-019-1666-5)
+Google의 Sycamore는 무작위 양자 회로 출력 분포를 샘플링하는 과제에서 당시 고전 추정보다 큰 속도 차이를 보고했다. 이후 고전 알고리즘과 하드웨어가 개선되며 격차 추정은 변했지만, 제한된 샘플링 과제에서 중요한 이정표였다. 이 과제의 가치는 연구 벤치마크에 있다. [Nature 논문](https://www.nature.com/articles/s41586-019-1666-5)
 
 ### 2024: Willow의 오류 정정과 RCS
 
@@ -87,7 +87,7 @@ Willow는 RCS 성능과 below-threshold 표면 코드 메모리를 보고했다.
 
 ### 2025: Quantum Echoes
 
-Google은 Willow에서 out-of-time-order correlator 계열의 Quantum Echoes 알고리즘을 실행하고, 고전 슈퍼컴퓨터 대비 약 13,000배 빠르다고 보고했다. 결과는 반복 가능한 물리 관측량과 연결된다는 점에서 RCS보다 응용에 가까운 단계지만, 분자 구조 실험은 proof-of-principle이며 광범위한 상업적 가치가 입증된 것은 아니다. [Nature 논문](https://www.nature.com/articles/s41586-025-09526-6), [Google 설명](https://blog.google/innovation-and-ai/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/)
+Google은 Willow에서 out-of-time-order correlator 계열의 Quantum Echoes 알고리즘을 실행하고, 고전 슈퍼컴퓨터 대비 약 13,000배 빠르다고 보고했다. 결과는 반복 가능한 물리 관측량과 연결된다는 점에서 RCS보다 응용에 가까운 단계다. 분자 구조 실험의 현재 증거 수준은 proof-of-principle이다. [Nature 논문](https://www.nature.com/articles/s41586-025-09526-6), [Google 설명](https://blog.google/innovation-and-ai/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/)
 
 고전 알고리즘은 계속 개선되므로 “양자 우위” 주장은 사용한 고전 기준선, 검증 방법, 전체 입출력 비용과 재현성을 함께 봐야 한다.
 

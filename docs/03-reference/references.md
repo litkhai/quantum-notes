@@ -45,7 +45,7 @@
 
 ## 기업·하드웨어 1차 자료
 
-아래는 독립 평가가 아니라 각 기업의 기술 설명과 발표를 확인하기 위한 링크다.
+아래 링크는 각 기업의 기술 설명과 발표를 확인하는 1차 자료다. 독립 평가는 논문과 제3자 검증 자료를 함께 사용한다.
 
 - IonQ, [Trapped-ion technology](https://www.ionq.com/technology)
 - IonQ, [회사·시스템 정보](https://www.ionq.com/)
