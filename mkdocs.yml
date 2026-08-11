@@ -28,6 +28,7 @@ theme:
     - navigation.path
     - navigation.sections
     - navigation.tabs
+    - toc.integrate
     - navigation.top
     - search.highlight
     - search.share

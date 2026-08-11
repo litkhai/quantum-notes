@@ -34,15 +34,15 @@ body {
 }
 
 .md-grid {
-  max-width: 82rem;
+  max-width: 70rem;
 }
 
 .md-main__inner {
-  margin-top: 1.4rem;
+  margin-top: 1rem;
 }
 
 .md-content__inner {
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
 }
 
 .quantum-hero {
@@ -57,14 +57,14 @@ body {
   border: 1px solid color-mix(in srgb, var(--quantum-violet) 24%, transparent);
   border-radius: 1rem;
   box-shadow: 0 1rem 3rem rgba(40, 28, 100, 0.12);
-  font-size: 1.05rem;
-  margin: 0 0 2rem;
-  padding: clamp(1.4rem, 4vw, 2.6rem);
+  font-size: 0.95rem;
+  margin: 0 0 1.6rem;
+  padding: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 .quantum-hero > p:first-child {
   color: color-mix(in srgb, var(--md-default-fg-color) 78%, var(--quantum-violet));
-  font-size: clamp(1.25rem, 3vw, 1.8rem);
+  font-size: clamp(1.15rem, 2.1vw, 1.55rem);
   font-weight: 780;
   letter-spacing: -0.025em;
   line-height: 1.35;
@@ -72,8 +72,10 @@ body {
 }
 
 .quantum-hero .md-button {
-  margin-right: 0.4rem;
-  margin-top: 0.65rem;
+  font-size: 0.78rem;
+  margin-right: 0.35rem;
+  margin-top: 0.5rem;
+  padding: 0.55em 1.1em;
 }
 
 .grid.cards > ul > li {
@@ -91,10 +93,11 @@ body {
 
 .md-typeset h1 {
   color: var(--md-default-fg-color);
+  font-size: 1.9rem;
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.2;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .md-typeset h2 {
@@ -171,11 +174,15 @@ body {
 
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 13.5rem;
+    width: 13rem;
   }
 
   .md-sidebar--secondary {
-    width: 13rem;
+    display: none;
+  }
+
+  .md-content {
+    max-width: 55rem;
   }
 }
 
