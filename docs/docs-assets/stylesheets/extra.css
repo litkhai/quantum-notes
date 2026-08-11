@@ -71,11 +71,27 @@ body {
   margin: 0 0 0.85rem;
 }
 
-.quantum-hero .md-button {
+.quantum-hero__actions {
+  margin-top: 1.3rem;
+  max-width: 48rem;
+}
+
+.quantum-hero__actions > p {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.quantum-hero .quantum-hero__actions .md-button {
+  align-items: center;
+  display: flex;
   font-size: 0.78rem;
-  margin-right: 0.35rem;
-  margin-top: 0.5rem;
+  justify-content: center;
+  margin: 0;
+  min-height: 2.9rem;
   padding: 0.55em 1.1em;
+  text-align: center;
 }
 
 .grid.cards > ul > li {
@@ -189,6 +205,10 @@ body {
 }
 
 @media screen and (max-width: 44.984375em) {
+  .quantum-hero__actions > p {
+    grid-template-columns: 1fr;
+  }
+
   .md-typeset h1 {
     font-size: 1.75rem;
   }

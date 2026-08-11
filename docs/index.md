@@ -11,8 +11,16 @@ hide:
 
 큐비트와 간섭의 원리에서 시작해 오류 정정, 주요 플레이어의 전략, 산업 가치사슬과 시장 전망까지 연결합니다. 120분 비기너 코스에서 출발해 장문 입문 본문과 주제별 심화 읽기로 이어집니다.
 
-[2시간 입문 강의 시작하기](01-beginner-lecture/README.md){ .md-button .md-button--primary }
-[주요 플레이어 비교하기](02-deep-dive/08-major-players.md){ .md-button }
+<div class="quantum-hero__actions" markdown>
+
+[2시간 입문 강의](01-beginner-lecture/README.md){ .md-button .md-button--primary }
+[입문 강의 본문](01-beginner-lecture/lecture-notes.md){ .md-button }
+[상세 심화 읽기](02-deep-dive/README.md){ .md-button }
+[주요 플레이어](02-deep-dive/08-major-players.md){ .md-button }
+[Qiskit Aer 실험](04-simulations/README.md){ .md-button }
+[GitHub 저장소](https://github.com/litkhai/quantum-notes){ .md-button }
+
+</div>
 
 </div>
 
