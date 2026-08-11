@@ -21,29 +21,30 @@
 - 선수지식: 없음
 - 수식: 개념을 설명하는 최소 수준
 
-**여기서 시작:** [01-beginner-lecture](01-beginner-lecture/README.md)
+**여기서 시작:** [01-beginner-lecture](docs/01-beginner-lecture/README.md)
 
 주요 문서:
 
-- [수강생 핸드아웃](01-beginner-lecture/session-handout.md)
-- [강사용 가이드](01-beginner-lecture/instructor-guide.md)
-- [120분 진행표](01-beginner-lecture/runsheet.md)
-- [슬라이드 구성안](01-beginner-lecture/slide-outline.md)
-- [산업·시장 브리프](01-beginner-lecture/industry-market-brief.md)
+- [수강생 핸드아웃](docs/01-beginner-lecture/session-handout.md)
+- [강사용 가이드](docs/01-beginner-lecture/instructor-guide.md)
+- [120분 진행표](docs/01-beginner-lecture/runsheet.md)
+- [슬라이드 구성안](docs/01-beginner-lecture/slide-outline.md)
+- [산업·시장 브리프](docs/01-beginner-lecture/industry-market-brief.md)
 
 ### 2. 상세한 원리를 위한 심화 과정
 
 입문 강의의 설명을 수식, 알고리즘의 조건과 예외, 물리 구현과 산업 근거까지 확장한다.
 
-1. [양자이론의 출발](02-deep-dive/01-quantum-origins.md)
-2. [큐비트·게이트·측정](02-deep-dive/02-qubits-gates-measurement.md)
-3. [위상·간섭과 Grover 탐색](02-deep-dive/03-interference-and-grover.md)
-4. [텐서곱과 얽힘](02-deep-dive/04-entanglement.md)
-5. [물리적 구현과 오류 정정](02-deep-dive/05-hardware-and-error-correction.md)
-6. [클라우드·산업·양자 우위](02-deep-dive/06-cloud-industry-and-advantage.md)
-7. [Shor·PQC·양자 난수](02-deep-dive/07-security-and-randomness.md)
+1. [양자이론의 출발](docs/02-deep-dive/01-quantum-origins.md)
+2. [큐비트·게이트·측정](docs/02-deep-dive/02-qubits-gates-measurement.md)
+3. [위상·간섭과 Grover 탐색](docs/02-deep-dive/03-interference-and-grover.md)
+4. [텐서곱과 얽힘](docs/02-deep-dive/04-entanglement.md)
+5. [물리적 구현과 오류 정정](docs/02-deep-dive/05-hardware-and-error-correction.md)
+6. [클라우드·산업·양자 우위](docs/02-deep-dive/06-cloud-industry-and-advantage.md)
+7. [Shor·PQC·양자 난수](docs/02-deep-dive/07-security-and-randomness.md)
+8. [주요 플레이어 전략](docs/02-deep-dive/08-major-players.md)
 
-**심화 과정 안내:** [02-deep-dive](02-deep-dive/README.md)
+**심화 과정 안내:** [02-deep-dive](docs/02-deep-dive/README.md)
 
 ## 저장소 구조
 
@@ -51,33 +52,23 @@
 quantum-notes/
 ├── README.md
 ├── CONTRIBUTING.md
-├── 01-beginner-lecture/
-│   ├── README.md
-│   ├── session-handout.md
-│   ├── instructor-guide.md
-│   ├── runsheet.md
-│   ├── slide-outline.md
-│   └── industry-market-brief.md
-├── 02-deep-dive/
-│   ├── README.md
-│   └── 01-...md ~ 07-...md
-├── 03-reference/
-│   ├── faq.md
-│   ├── glossary.md
-│   └── references.md
-└── archive/
-    ├── README.md
-    ├── initial-draft.md
-    ├── drafts/
-    └── originals/
+├── mkdocs.yml
+├── requirements-docs.txt
+└── docs/
+    ├── index.md
+    ├── 01-beginner-lecture/
+    ├── 02-deep-dive/
+    ├── 03-reference/
+    ├── docs-assets/
+    └── archive/
 ```
 
 ## 공통 참고자료
 
-- [FAQ](03-reference/faq.md): 강의에서 나올 수 있는 심화 질문
-- [용어 사전](03-reference/glossary.md): 주요 개념의 짧은 정의
-- [참고자료](03-reference/references.md): 논문·공식 문서·산업 출처
-- [원문 보관소](archive/README.md): 구조 개편 전 자료와 초안
+- [FAQ](docs/03-reference/faq.md): 강의에서 나올 수 있는 심화 질문
+- [용어 사전](docs/03-reference/glossary.md): 주요 개념의 짧은 정의
+- [참고자료](docs/03-reference/references.md): 논문·공식 문서·산업 출처
+- [원문 보관소](docs/archive/README.md): 구조 개편 전 자료와 초안
 
 ## 저장소 사용 방법
 
@@ -88,12 +79,22 @@ git clone https://github.com/litkhai/quantum-notes.git
 cd quantum-notes
 ```
 
-별도의 빌드나 패키지 설치는 필요하지 않다. Markdown과 수식 렌더링을 지원하는 편집기 또는 GitHub 웹 화면을 사용한다.
+문서는 GitHub에서 직접 읽거나 GitHub Pages 사이트에서 검색·탐색할 수 있다. Markdown 원문을 읽는 데 별도의 빌드는 필요하지 않다.
+
+- 문서 사이트: [Quantum Notes GitHub Pages](https://litkhai.github.io/quantum-notes/)
+- 저장소: [litkhai/quantum-notes](https://github.com/litkhai/quantum-notes)
+
+사이트를 로컬에서 미리 보려면 Python 3 환경에서 다음을 실행한다.
+
+```bash
+python -m pip install -r requirements-docs.txt
+mkdocs serve
+```
 
 강의를 준비할 때는 다음 순서를 권장한다.
 
 ```text
-01-beginner-lecture/README.md
+docs/01-beginner-lecture/README.md
   → instructor-guide.md
   → runsheet.md
   → slide-outline.md
@@ -108,7 +109,7 @@ cd quantum-notes
 - 기업 발표와 로드맵은 동료평가 논문과 다른 증거 수준으로 표시한다.
 - 시장 수치에는 조사기관, 기준연도, 시장 범위와 전망 여부를 함께 쓴다.
 - 시점에 민감한 내용에는 기준일과 1차 출처를 붙인다.
-- 기존 원문은 삭제하지 않고 `archive/`에 보존한다.
+- 기존 원문은 삭제하지 않고 `docs/archive/`에 보존한다.
 
 ## 업데이트 정책
 

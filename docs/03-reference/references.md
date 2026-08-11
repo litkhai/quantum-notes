@@ -1,6 +1,6 @@
 # 참고자료
 
-[홈](../README.md) · [FAQ](faq.md) · [용어 사전](glossary.md)
+[홈](../index.md) · [FAQ](faq.md) · [용어 사전](glossary.md)
 
 시점에 민감한 산업 수치는 강의 직전에 다시 확인한다. 기술적 주장에는 논문과 공식 문서를 우선하고, 기업 발표는 회사의 주장임을 표시한다.
 
@@ -52,6 +52,19 @@
 - Rigetti, [What we build](https://www.rigetti.com/what-we-build)
 - Rigetti, [Cepheus-1-108Q 일반 제공 발표](https://investors.rigetti.com/news-releases/news-release-details/rigetti-announces-general-availability-108-qubit-system), 2026
 - IBM, [Quantum roadmap 2026](https://www.ibm.com/roadmaps/quantum/2026/)
+- IBM, [Quantum roadmap 2029](https://www.ibm.com/roadmaps/quantum/2029/)
+- Google Quantum AI, [오류정정 양자컴퓨터 로드맵](https://quantumai.google/learn/map)
+- Microsoft, [Majorana 1 공식 발표](https://news.microsoft.com/source/features/innovation/microsofts-majorana-1-chip-carves-new-path-for-quantum-computing/), 2025
+- Amazon Web Services, [Amazon Braket](https://aws.amazon.com/braket/)
+- NVIDIA, [Accelerated Quantum Computing](https://www.nvidia.com/en-us/solutions/quantum-computing/)
+- Quantinuum, [Fault-tolerant roadmap](https://www.quantinuum.com/roadmap)
+- D-Wave, [Annealing and gate-model systems](https://www.dwavequantum.com/solutions-and-products/systems/)
+- QuEra, [Quantum roadmap](https://www.quera.com/our-quantum-roadmap)
+- Atom Computing, [공식 사이트와 시스템 전략](https://atom-computing.com/)
+- Pasqal, [Quantum roadmap](https://www.pasqal.com/technology/roadmap/)
+- PsiQuantum, [Technology](https://www.psiquantum.com/technology)
+- Xanadu, [Aurora photonic system](https://www.xanadu.ai/blog/introducing-aurora)
+- Intel, [Quantum computing research](https://www.intel.com/content/www/us/en/research/quantum-computing.html)
 
 ## 산업·시장·생태계
 
@@ -71,4 +84,4 @@
 | 클라우드 페이지 | 현재 접근 가능한 장비와 실시간 가격 |
 | 시장 보고서 | 원자료, 실제 매출과 전망의 구분, 순환 인용 여부 |
 
-[홈](../README.md) · [FAQ](faq.md) · [용어 사전](glossary.md)
+[홈](../index.md) · [FAQ](faq.md) · [용어 사전](glossary.md)

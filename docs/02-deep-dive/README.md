@@ -1,6 +1,6 @@
 # 양자컴퓨팅 상세 심화 과정
 
-[전체 홈](../README.md) · [2시간 입문 강의](../01-beginner-lecture/README.md) · [FAQ](../03-reference/faq.md)
+[전체 홈](../index.md) · [2시간 입문 강의](../01-beginner-lecture/README.md) · [FAQ](../03-reference/faq.md)
 
 이 과정은 2시간 입문 강의에서 생략한 원리, 수식, 알고리즘의 한계, 하드웨어와 산업 근거를 자세히 다룬다.
 
@@ -23,6 +23,7 @@
 | 5 | [물리 구현과 오류 정정](05-hardware-and-error-correction.md) | 논리 큐비트를 어떻게 안정화하는가? |
 | 6 | [클라우드·산업·양자 우위](06-cloud-industry-and-advantage.md) | 검증된 성과와 기업 약속을 어떻게 구분하는가? |
 | 7 | [Shor·PQC·양자 난수](07-security-and-randomness.md) | 실제 보안 위협과 대응은 무엇인가? |
+| 8 | [주요 플레이어 전략](08-major-players.md) | 기업마다 어떤 병목과 가치사슬 계층에 베팅하는가? |
 
 ## 관심 분야만 골라 읽기
 
@@ -40,9 +41,9 @@ H 게이트와 간섭에서 시작해 Grover의 진폭 증폭, Shor의 구조와
 
 ### 하드웨어와 산업
 
-`05 → 06 → 07`
+`05 → 06 → 08 → 07`
 
-물리 큐비트, 오류 정정, 클라우드 비용, 기업 비교와 보안 전환을 연결한다.
+물리 큐비트, 오류 정정, 클라우드 비용, 주요 기업의 전략과 보안 전환을 연결한다.
 
 ## 입문 강의와 심화 과정의 차이
 
@@ -60,4 +61,4 @@ H 게이트와 간섭에서 시작해 Grover의 진폭 증폭, Shor의 구조와
 - [핵심 용어 사전](../03-reference/glossary.md)
 - [논문과 공식 자료](../03-reference/references.md)
 
-[전체 홈](../README.md) · [2시간 입문 강의](../01-beginner-lecture/README.md) · [첫 장 시작](01-quantum-origins.md)
+[전체 홈](../index.md) · [2시간 입문 강의](../01-beginner-lecture/README.md) · [첫 장 시작](01-quantum-origins.md)

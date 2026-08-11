@@ -1,6 +1,6 @@
 # 비전공자를 위한 2시간 양자컴퓨팅 세션
 
-[전체 홈](../README.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
+[전체 홈](../index.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
 
 ## 세션의 성격
 
@@ -30,9 +30,10 @@
 | 문서 | 용도 |
 |---|---|
 | [강사용 가이드](instructor-guide.md) | 목표, 설명 수준, 강의 원칙과 준비물 |
-| [120분 진행표](runsheet.md) | 분 단위 강의 흐름과 핵심 대사 |
-| [슬라이드 구성안](slide-outline.md) | 24장 슬라이드의 제목·시각 자료·메시지 |
+| [120분 상세 진행표](runsheet.md) | 분 단위 강의 흐름, 그대로 읽을 수 있는 대사, 화면 지시, 오해 방지, 예상 Q&A, 90분 압축안과 리허설 체크리스트 |
+| [슬라이드 구성안](slide-outline.md) | 26장 슬라이드의 제목·시각 자료·메시지 |
 | [산업·시장 브리프](industry-market-brief.md) | 생태계, 기업군, 수익 모델과 시장 수치 업데이트 |
+| [주요 플레이어 전략](../02-deep-dive/08-major-players.md) | IBM·Google·Microsoft·AWS·NVIDIA와 주요 QPU 기업의 서로 다른 베팅 |
 
 ## 세션이 답하는 질문
 
@@ -55,4 +56,4 @@
 
 > 과학적 진전, 제품화, 고객 가치와 경제적 수익성은 서로 다른 단계다.
 
-[전체 홈](../README.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)
+[전체 홈](../index.md) · [수강생 핸드아웃](session-handout.md) · [상세 심화 과정](../02-deep-dive/README.md)

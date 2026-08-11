@@ -1,0 +1,149 @@
+site_name: Quantum Notes
+site_description: 양자컴퓨팅의 원리부터 하드웨어, 주요 플레이어와 산업 전망까지 정리한 한글 강의·학습 노트
+site_author: quantum-notes contributors
+site_url: https://litkhai.github.io/quantum-notes/
+repo_url: https://github.com/litkhai/quantum-notes
+repo_name: litkhai/quantum-notes
+edit_uri: edit/main/
+
+docs_dir: docs
+site_dir: ../quantum-notes-site
+
+theme:
+  name: material
+  language: ko
+  custom_dir: docs-overrides
+  logo: docs-assets/images/quantum-mark.svg
+  favicon: docs-assets/images/favicon.svg
+  font: false
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 시스템 테마 사용
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep-purple
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: 어두운 테마로 전환
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep-purple
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 밝은 테마로 전환
+
+nav:
+  - 홈: index.md
+  - 2시간 입문 강의:
+      - 과정 안내: 01-beginner-lecture/README.md
+      - 수강생 핸드아웃: 01-beginner-lecture/session-handout.md
+      - 120분 상세 진행표: 01-beginner-lecture/runsheet.md
+      - 강사용 가이드: 01-beginner-lecture/instructor-guide.md
+      - 슬라이드 구성안: 01-beginner-lecture/slide-outline.md
+      - 산업·시장 브리프: 01-beginner-lecture/industry-market-brief.md
+  - 상세 심화:
+      - 과정 안내: 02-deep-dive/README.md
+      - 1. 양자이론의 출발: 02-deep-dive/01-quantum-origins.md
+      - 2. 큐비트·게이트·측정: 02-deep-dive/02-qubits-gates-measurement.md
+      - 3. 위상·간섭과 Grover: 02-deep-dive/03-interference-and-grover.md
+      - 4. 텐서곱과 얽힘: 02-deep-dive/04-entanglement.md
+      - 5. 물리 구현과 오류 정정: 02-deep-dive/05-hardware-and-error-correction.md
+      - 6. 클라우드·산업·양자 우위: 02-deep-dive/06-cloud-industry-and-advantage.md
+      - 7. Shor·PQC·양자 난수: 02-deep-dive/07-security-and-randomness.md
+      - 8. 주요 플레이어 전략: 02-deep-dive/08-major-players.md
+  - 참고자료:
+      - FAQ: 03-reference/faq.md
+      - 용어 사전: 03-reference/glossary.md
+      - 논문·공식 자료: 03-reference/references.md
+  - 프로젝트:
+      - 기여 방법: https://github.com/litkhai/quantum-notes/blob/main/CONTRIBUTING.md
+      - 원문 보관소:
+          - 보관소 안내: archive/README.md
+          - 최초 통합 초안: archive/initial-draft.md
+          - 최초 강의 진행표: archive/originals/02-lecture-runsheet.md
+          - 핵심 개념 원문: archive/originals/03-core-concepts-annotated.md
+          - 하드웨어·산업 원문: archive/originals/04-hardware-industry.md
+          - 심화 질문 원문: archive/originals/05-deep-questions.md
+          - 구조 개편 전 로드맵: archive/drafts/01-study-roadmap-first-pass.md
+
+plugins:
+  - search:
+      lang:
+        - ko
+        - en
+      separator: '[\s\-\u200b]+'
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: 이 절의 링크
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - docs-assets/stylesheets/extra.css
+
+extra_javascript:
+  - docs-assets/javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  status:
+    current: 현재 강의 자료
+    update: 갱신 필요
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/litkhai/quantum-notes
+      name: GitHub 저장소
+  generator: false
+
+copyright: 기준일 2026-08-11 · 교육용 자료 · 기업 로드맵과 시장 전망은 원문에서 재확인하세요.
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: relative_to_docs
+  links:
+    not_found: info
+    anchors: info
+    absolute_links: relative_to_docs
+    unrecognized_links: info

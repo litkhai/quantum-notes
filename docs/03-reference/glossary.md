@@ -1,6 +1,6 @@
 # 핵심 용어 사전
 
-[홈](../README.md) · [FAQ](faq.md) · [참고자료](references.md)
+[홈](../index.md) · [FAQ](faq.md) · [참고자료](references.md)
 
 | 용어 | 뜻 |
 |---|---|
@@ -40,4 +40,4 @@
 | shot | 같은 회로를 한 번 실행하고 측정 결과를 얻는 단위 |
 | transpilation | 논리 회로를 장비의 게이트와 연결성에 맞게 변환·최적화하는 과정 |
 
-[홈](../README.md) · [FAQ](faq.md) · [참고자료](references.md)
+[홈](../index.md) · [FAQ](faq.md) · [참고자료](references.md)

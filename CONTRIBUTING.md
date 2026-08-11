@@ -8,10 +8,10 @@
 
 | 내용 | 위치 |
 |---|---|
-| 2시간 세션에서 직접 설명할 핵심 | `01-beginner-lecture/` |
-| 수식·증명·조건·예외와 기술 세부사항 | `02-deep-dive/` |
-| FAQ·용어·외부 출처 | `03-reference/` |
-| 폐기하지 않을 초기 원문·과거 초안 | `archive/` |
+| 2시간 세션에서 직접 설명할 핵심 | `docs/01-beginner-lecture/` |
+| 수식·증명·조건·예외와 기술 세부사항 | `docs/02-deep-dive/` |
+| FAQ·용어·외부 출처 | `docs/03-reference/` |
+| 폐기하지 않을 초기 원문·과거 초안 | `docs/archive/` |
 
 초보 문서가 길어지면 세부 설명을 심화 문서로 옮기고 링크한다. 같은 상세 설명을 두 위치에 중복 작성하지 않는다.
 
@@ -57,20 +57,21 @@
 
 강의 전에는 다음 문서를 우선 검토한다.
 
-- `01-beginner-lecture/industry-market-brief.md`
-- `02-deep-dive/06-cloud-industry-and-advantage.md`
-- `02-deep-dive/07-security-and-randomness.md`
-- `03-reference/references.md`
+- `docs/01-beginner-lecture/industry-market-brief.md`
+- `docs/02-deep-dive/06-cloud-industry-and-advantage.md`
+- `docs/02-deep-dive/07-security-and-randomness.md`
+- `docs/02-deep-dive/08-major-players.md`
+- `docs/03-reference/references.md`
 
 ## 원문 보존
 
-큰 구조 변경이나 대규모 재작성 전에는 기존 문서를 `archive/` 아래에 보존한다. 아카이브 문서는 최신 정보로 오해되지 않도록 `archive/README.md`에서 성격을 설명한다.
+큰 구조 변경이나 대규모 재작성 전에는 기존 문서를 `docs/archive/` 아래에 보존한다. 아카이브 문서는 최신 정보로 오해되지 않도록 `docs/archive/README.md`에서 성격을 설명한다.
 
 ## Git 작업 흐름
 
 ```bash
 git switch -c docs/topic-name
-git add README.md 01-beginner-lecture 02-deep-dive 03-reference
+git add README.md docs
 git commit -m "docs: update quantum computing notes"
 git push -u origin docs/topic-name
 ```
@@ -89,7 +90,7 @@ git push -u origin docs/topic-name
 - [ ] 수식·표의 수치를 다시 계산했는가?
 - [ ] 기업 목표와 이미 실현된 결과가 구분되어 있는가?
 - [ ] 시장 숫자의 정의·기준일·출처가 있는가?
-- [ ] 관련 참고자료를 `03-reference/references.md`에 추가했는가?
+- [ ] 관련 참고자료를 `docs/03-reference/references.md`에 추가했는가?
 - [ ] 오래된 원문을 보존해야 하는 변경인가?
 - [ ] `git status`에 의도하지 않은 파일이 없는가?
 

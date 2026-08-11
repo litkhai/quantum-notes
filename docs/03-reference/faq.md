@@ -1,6 +1,6 @@
 # 심화 질문과 답변
 
-[홈](../README.md) · [용어 사전](glossary.md) · [참고자료](references.md)
+[홈](../index.md) · [용어 사전](glossary.md) · [참고자료](references.md)
 
 ## 측정하면 회로 전체가 망가지는가
 
@@ -105,4 +105,4 @@ RCS 같은 과제는 계산 경계를 보여주는 실험으로 중요하지만 
 
 가능성이 낮다. 운영체제, 데이터베이스, 문서 편집과 일반 제어 흐름에는 고전컴퓨터가 훨씬 적합하다. 현실적인 구조는 CPU·GPU·HPC가 데이터 준비, 회로 생성, 오류 복호와 후처리를 맡고 QPU가 특수한 양자 커널을 처리하는 하이브리드 시스템이다.
 
-[홈](../README.md) · [용어 사전](glossary.md) · [참고자료](references.md)
+[홈](../index.md) · [용어 사전](glossary.md) · [참고자료](references.md)
