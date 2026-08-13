@@ -80,6 +80,7 @@ quantum-notes/
 
 ## 공통 참고자료
 
+- [추천 읽기 경로](docs/03-reference/reading-guide.md): 목적·난이도별 주석형 자료 안내
 - [FAQ](docs/03-reference/faq.md): 강의에서 나올 수 있는 심화 질문
 - [용어 사전](docs/03-reference/glossary.md): 주요 개념의 짧은 정의
 - [참고자료](docs/03-reference/references.md): 논문·공식 문서·산업 출처

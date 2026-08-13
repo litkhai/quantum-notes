@@ -60,7 +60,7 @@ hide:
 
     FAQ, 핵심 용어, 논문·표준·공식 기업 자료를 통해 강의에서 생략한 조건과 출처를 확인합니다.
 
-    [참고자료 모음 →](03-reference/references.md)
+    [추천 읽기 경로 →](03-reference/reading-guide.md)
 
 </div>
 
@@ -95,6 +95,7 @@ Qiskit Aer 시뮬레이션은 `H-H`, `H-Z-H`, Bell 상태, 2큐비트 Grover와 
 - [입문 강의 본문](01-beginner-lecture/lecture-notes.md)
 - [FAQ](03-reference/faq.md)
 - [용어 사전](03-reference/glossary.md)
+- [추천 읽기 경로](03-reference/reading-guide.md)
 - [논문과 공식 자료](03-reference/references.md)
 - [원문 보관소](archive/README.md)
 - [Git 저장소 안내](project-guide.md)

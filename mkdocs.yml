@@ -78,6 +78,7 @@ nav:
       - Qiskit Aer 안내: 04-simulations/README.md
       - 자동 실행 결과: 04-simulations/results.md
   - 참고자료:
+      - 추천 읽기 경로: 03-reference/reading-guide.md
       - FAQ: 03-reference/faq.md
       - 용어 사전: 03-reference/glossary.md
       - 논문·공식 자료: 03-reference/references.md
