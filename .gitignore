@@ -5,3 +5,8 @@ __pycache__/
 *.py[cod]
 site/
 .site/
+
+# local-only: generated decks, inspect output, customer and company material
+.tmp/
+artifacts/
+/quantum-computing-120min-stories.pptx

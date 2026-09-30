@@ -1,0 +1,21 @@
+services:
+  quantum-observatory:
+    build: .
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    environment:
+      CLICKHOUSE_HOST: ${CLICKHOUSE_HOST}
+      CLICKHOUSE_PORT: ${CLICKHOUSE_PORT:-8443}
+      CLICKHOUSE_SECURE: ${CLICKHOUSE_SECURE:-true}
+      CLICKHOUSE_USERNAME: ${CLICKHOUSE_USERNAME:-default}
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+      CLICKHOUSE_DATABASE: ${CLICKHOUSE_DATABASE:-quantum}
+      CLICKHOUSE_TABLE: ${CLICKHOUSE_TABLE:-quantum_shots}
+      CLICKHOUSE_DEMO_MODE: ${CLICKHOUSE_DEMO_MODE:-sample}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>{if(!r.ok)process.exit(1)})"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 15s
+    restart: unless-stopped

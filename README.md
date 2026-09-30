@@ -55,6 +55,7 @@ Qiskit Aer로 간섭, Bell 상태, 2큐비트 Grover와 잡음의 영향을 재�
 - [Qiskit Aer 시뮬레이션 안내](docs/04-simulations/README.md)
 - [자동 실행 결과](docs/04-simulations/results.md)
 - 실행 명령: `python -m simulations.run`
+- ClickHouse 관측성 데모: `python -m simulations.clickhouse_demo`
 
 ## 저장소 구조
 

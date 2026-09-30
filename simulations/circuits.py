@@ -31,6 +31,19 @@ def bell_state() -> QuantumCircuit:
     return circuit
 
 
+def ghz_state(qubits: int = 3) -> QuantumCircuit:
+    """Return an n-qubit GHZ circuit measured in the computational basis."""
+    if qubits < 2:
+        raise ValueError("GHZ state requires at least two qubits")
+
+    circuit = QuantumCircuit(qubits, qubits, name=f"GHZ-{qubits}")
+    circuit.h(0)
+    for target in range(1, qubits):
+        circuit.cx(target - 1, target)
+    circuit.measure(range(qubits), range(qubits))
+    return circuit
+
+
 def grover_two_qubit() -> QuantumCircuit:
     """Return one Grover iteration that marks the two-bit state |11>."""
     circuit = QuantumCircuit(2, 2, name="Grover-11")
