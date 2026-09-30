@@ -33,15 +33,46 @@ INTERPRETATIONS = {
 }
 
 
-def teaching_noise_model() -> NoiseModel:
-    """Return a deliberately visible noise model for the Bell comparison."""
+def configurable_noise_model(
+    *,
+    one_qubit_error: float = 0.02,
+    two_qubit_error: float = 0.05,
+    readout_0_to_1: float = 0.02,
+    readout_1_to_0: float = 0.03,
+) -> NoiseModel:
+    """Return a configurable depolarizing and asymmetric readout model."""
+    for name, probability in {
+        "one_qubit_error": one_qubit_error,
+        "two_qubit_error": two_qubit_error,
+        "readout_0_to_1": readout_0_to_1,
+        "readout_1_to_0": readout_1_to_0,
+    }.items():
+        if not 0.0 <= probability <= 1.0:
+            raise ValueError(f"{name} must be between 0 and 1")
+
     model = NoiseModel()
-    model.add_all_qubit_quantum_error(depolarizing_error(0.02, 1), ["h", "x"])
-    model.add_all_qubit_quantum_error(depolarizing_error(0.05, 2), ["cx", "cz"])
+    if one_qubit_error:
+        model.add_all_qubit_quantum_error(
+            depolarizing_error(one_qubit_error, 1), ["h", "x"]
+        )
+    if two_qubit_error:
+        model.add_all_qubit_quantum_error(
+            depolarizing_error(two_qubit_error, 2), ["cx", "cz"]
+        )
     model.add_all_qubit_readout_error(
-        ReadoutError([[0.98, 0.02], [0.03, 0.97]])
+        ReadoutError(
+            [
+                [1.0 - readout_0_to_1, readout_0_to_1],
+                [readout_1_to_0, 1.0 - readout_1_to_0],
+            ]
+        )
     )
     return model
+
+
+def teaching_noise_model() -> NoiseModel:
+    """Return the deliberately visible noise model used in the course."""
+    return configurable_noise_model()
 
 
 def run_counts(
@@ -66,6 +97,33 @@ def run_counts(
     ).result()
     counts = result.get_counts()
     return dict(sorted(counts.items()))
+
+
+def run_memory(
+    circuit: QuantumCircuit,
+    *,
+    shots: int = DEFAULT_SHOTS,
+    seed: int = DEFAULT_SEED,
+    noise_model: NoiseModel | None = None,
+) -> list[str]:
+    """Execute one circuit and return every classical shot result."""
+    if shots <= 0:
+        raise ValueError("shots must be a positive integer")
+
+    simulator = AerSimulator(method="automatic", noise_model=noise_model)
+    compiled = transpile(
+        circuit,
+        simulator,
+        optimization_level=1,
+        seed_transpiler=seed,
+    )
+    result = simulator.run(
+        compiled,
+        shots=shots,
+        memory=True,
+        seed_simulator=seed,
+    ).result()
+    return [str(bitstring).replace(" ", "") for bitstring in result.get_memory()]
 
 
 def probabilities(counts: dict[str, int], shots: int) -> dict[str, float]:
